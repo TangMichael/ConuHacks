@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.css';
+import ChatContainer from './Components/Call-Component/Containers/ChatContainer';
 
 const Index = () => <h2>Home</h2>;
 const About = () => <h2>About</h2>;
@@ -18,14 +19,13 @@ class App extends Component {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/users/">Users</Link>
+            <Link to="/chat/">Chat</Link>
           </li>
         </ul>
       </nav>
 
       <Route path="/" exact component={Index} />
-      <Route path="/about/" component={About} />
-      <Route path="/users/" component={Users} />
+      <Route path="/chat/" component={ChatContainer} />
     </div>
   </Router>
        
