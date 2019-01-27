@@ -29,13 +29,8 @@ namespace api
             .Build();
             host.Run();
 
-            BuildWebHost(args).Run();
         }
 
-        public static IWebHost BuildWebHost(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>()
-                .Build();
 
         //public static async Task<object> StreamingMicRecognizeAsync(int seconds)
         //{
