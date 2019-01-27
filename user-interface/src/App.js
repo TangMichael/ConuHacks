@@ -4,8 +4,6 @@ import './App.css';
 import ChatContainer from './Components/Call-Component/Containers/ChatContainer';
 
 const Index = () => <h2>Home</h2>;
-const About = () => <h2>About</h2>;
-const Users = () => <h2>Users</h2>;
 
 class App extends Component {
   render() {
