@@ -1,0 +1,13 @@
+.container {
+    display:flex;
+    height:100vh;
+}
+
+.topics {
+    flex:1;
+}
+
+.chat{
+    flex:1;
+    height:100vh;
+}
